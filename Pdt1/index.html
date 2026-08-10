@@ -1,11 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product 1</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Packaging Coatings - Arihant Elchem Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .product-section-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        @media (max-width: 1024px) {
+            .product-section-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .product-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .content-list {
+            color: #042c71;
+            font-size: 15px;
+            margin-bottom: 24px;
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+        .benefits-list {
+            color: #042c71;
+            font-size: 15px;
+            margin-bottom: 24px;
+            list-style-type: none;
+            padding-left: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .benefits-list li strong {
+            color: #0a001a;
+        }
+        .section-title-custom {
+            color: var(--gold);
+            line-height: 1.2;
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 700;
+        }
+        .btn-enquire {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 32px;
+            background: var(--gold);
+            color: #fff !important;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            border-radius: 4px;
+            margin-top: 24px;
+            transition: background 0.3s, transform 0.2s;
+            border: none;
+        }
+        .btn-enquire:hover {
+            background: #b5955c;
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
-    <h1>This Section is reserved for Product 1 only</h1>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="../index.html#home" class="nav-brand">
+    <img src="../Logo1.png" alt="Arihant Elchem Solutions" />
+    <div class="nav-name">
+      Arihant Elchem Solutions
+      <span> Manufacturers &amp; Distributors</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="../index.html#home">Home</a></li>
+    <li><a href="../index.html#about">About</a></li>
+     <li class="dropdown">
+        <a href="../index.html#products">Our Products</a>
+        <ul class="dropdown-menu">
+            <li><a href="index.html">Product 1</a></li>
+            <li><a href="../Pdt2/index.html">Plating Chemicals</a></li>
+            <li><a href="../Pdt3/index.html">Anodes</a></li>
+            <li><a href="../Pdt4/index.html">Basic Chemicals</a></li>
+        </ul>
+     </li>
+    <li><a href="../index.html#contact">Contact Us</a></li>
+  </ul>
+  
+<a 
+  href="https://wa.me/918618047994?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20product%3F" 
+  target="_blank" 
+  class="btn-whatsapp-nav"
+>
+  💬 Enquire Now
+</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- MAIN INTRO SECTION -->
+<section id="packaging-coatings" style="margin-top: 160px; padding-top: 60px;">
+  <div class="about-content" style="max-width: 1000px; margin: 0 auto; text-align: center;">
+    <div class="section-tag" style="font-size: 36px; margin-bottom: 20px; color: #0a001a;">Packaging Coatings</div>
+    <div class="section-title-custom" style="display: block;">Advanced Coating Solutions for Personal Care & Food & General Line Packaging</div>
+    <div style="font-weight: 600; color: #0a001a; margin-bottom: 20px; font-size: 18px; letter-spacing: 0.05em;">Protection • Performance • Appearance</div>
+    <div class="divider" style="margin: 20px auto;"></div>
+    <p class="section-desc" style="max-width: 800px; margin: 0 auto 20px; text-align: center; color: #042c71; font-size: 16px;">
+      At <strong>Arihant Elchem Solutions</strong>, we offer advanced packaging coating solutions from <strong>PPG Asian Paints</strong> for demanding applications in <strong>Personal Care and Food & General Line packaging</strong>.
+    </p>
+    <p class="section-desc" style="max-width: 800px; margin: 0 auto; text-align: center; color: #042c71; font-size: 16px;">
+      Our solutions are designed to help packaging manufacturers achieve the right balance of <strong>product protection, coating performance, durability and attractive appearance</strong> while supporting efficient manufacturing processes.
+    </p>
+    
+    <div style="margin-top: 40px; display: flex; justify-content: center;">
+        <img src="./images/image13.png" alt="Packaging Coatings" class="product-img" style="max-width: 800px;">
+    </div>
+    
+    <a href="https://wa.me/918618047994?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Packaging%20Coatings" target="_blank" class="btn-enquire">
+      Enquire Now
+    </a>
+  </div>
+</section>
+
+<!-- PERSONAL CARE PACKAGING SECTION -->
+<section id="personal-care" style="background: #fafafa; border-top: 1px solid var(--border); padding: 80px 20px;">
+  <div class="product-section-grid">
+    <div class="about-visual" style="display: flex; flex-direction: column; gap: 20px;">
+        <img src="./images/image14.png" alt="Personal Care Aerosol Cans" class="product-img">
+        <img src="./images/image15.png" alt="Personal Care Packaging" class="product-img">
+    </div>
+    
+    <div class="about-content">
+      <div class="section-tag" style="font-size: 28px; margin-bottom: 10px; color: #0a001a;">Personal Care Packaging</div>
+      <div class="divider"></div>
+      <p class="section-desc" style="margin-bottom: 30px; color: #042c71;">
+        Modern personal care packaging needs to deliver both <strong>high performance and premium aesthetics</strong>. Our coating solutions are suitable for metal packaging used for personal and cosmetic products.
+      </p>
+      
+      <h3 class="section-title-custom" style="font-size: 24px;">Applications</h3>
+      <ul class="content-list">
+        <li>Aerosol cans</li>
+        <li>Aluminium tubes</li>
+        <li>Monobloc cans</li>
+        <li>Cosmetic packaging</li>
+        <li>Personal & home care products</li>
+        <li>Pharmaceutical and specialty applications</li>
+      </ul>
+      
+      <h3 class="section-title-custom" style="font-size: 24px;">Key Performance Benefits</h3>
+      <ul class="benefits-list">
+        <li><strong>Interior Protection:</strong> Barrier protection between the packaged product and the metal substrate.</li>
+        <li><strong>Chemical Resistance:</strong> Coating systems designed for demanding product formulations and end-use conditions.</li>
+        <li><strong>Durability:</strong> Protection against scratches, scuffing and abrasion during manufacturing, transportation and handling.</li>
+        <li><strong>Premium Appearance:</strong> A wide range of colours, finishes and special effects can help brands create distinctive packaging.</li>
+      </ul>
+      
+      <p class="section-desc" style="font-style: italic; font-size: 14px; color: #042c71; margin-top: 20px;">
+        PPG Asian Paints specifically describes its Personal Care portfolio for monobloc aerosols and tubes, with internal/external coatings providing protection, durability and decorative performance.
+      </p>
+      
+      <a href="https://wa.me/918618047994?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Personal%20Care%20Packaging%20Coatings" target="_blank" class="btn-enquire">
+        Enquire Now
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOD & GENERAL LINE PACKAGING SECTION -->
+<section id="food-general-line" style="border-top: 1px solid var(--border); padding: 80px 20px;">
+  <div class="product-section-grid">
+    
+    <div class="about-content">
+      <div class="section-tag" style="font-size: 28px; margin-bottom: 10px; color: #0a001a;">Food & General Line Packaging</div>
+      <div class="section-title-custom" style="font-size: 22px;">Protection for demanding metal packaging applications</div>
+      <div class="divider"></div>
+      <p class="section-desc" style="margin-bottom: 30px; color: #042c71;">
+        Food & General Line packaging requires coatings that provide a reliable barrier between the <strong>metal substrate and packaged contents</strong>, while maintaining flexibility, durability and manufacturing performance.
+      </p>
+      
+      <h3 class="section-title-custom" style="font-size: 24px;">Applications</h3>
+      <ul class="content-list">
+        <li>Food cans</li>
+        <li>General line cans</li>
+        <li>Metal containers</li>
+        <li>Specialty metal packaging</li>
+        <li>Steel & aluminium packaging</li>
+        <li>Can ends and related applications</li>
+      </ul>
+      
+      <h3 class="section-title-custom" style="font-size: 24px;">Key Performance Benefits</h3>
+      <ul class="benefits-list">
+        <li><strong>Corrosion Protection:</strong> Helps protect the metal substrate from corrosion and interaction with the packaged contents.</li>
+        <li><strong>Product Protection:</strong> Provides a protective barrier to help maintain the integrity and quality of the packaged product.</li>
+        <li><strong>Chemical & Stain Resistance:</strong> Coating systems can be selected according to the chemical characteristics and requirements of the packaged product.</li>
+        <li><strong>Flexibility & Durability:</strong> Designed to withstand forming, handling, transportation and other manufacturing operations.</li>
+      </ul>
+      
+      <p class="section-desc" style="font-style: italic; font-size: 14px; color: #042c71; margin-top: 20px;">
+        PPG Asian Paints states that its food-can coating portfolio covers aluminium and steel cans and includes solutions designed for protection of contents, regulatory requirements, chemical resistance, flexibility and scratch resistance.
+      </p>
+      
+      <a href="https://wa.me/918618047994?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20Food%20%26%20General%20Line%20Packaging%20Coatings" target="_blank" class="btn-enquire">
+        Enquire Now
+      </a>
+    </div>
+    
+    <div class="about-visual" style="display: flex; flex-direction: column; gap: 20px;">
+      <img src="./images/image16.png" alt="Food Cans" class="product-img">
+      <img src="./images/image17.png" alt="Metal Cans" class="product-img">
+      <img src="./images/image18.png" alt="Factory Line Cans" class="product-img">
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">Arihant Elchem Solutions</div>
+  <div class="footer-copy">© 2026 Arihant Elchem Solutions. All rights reserved.</div>
+  <div class="footer-copy">Website Designed &amp; Developed by <a href="https://www.easywebpresence.co.in/" target="_blank" style="color:#c8a96e;">Easy-Web-Presence</a></div>
+</footer>
+
+<script src="../script.js"></script>
 </body>
 </html>
