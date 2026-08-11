@@ -820,6 +820,22 @@
       letter-spacing: 0.08em;
       color: #084387;
     }
+    
+    /* Make dropdown visible statically on mobile */
+    .dropdown-menu {
+      display: block !important;
+      position: static;
+      box-shadow: none;
+      padding: 0 0 10px 20px;
+      background: transparent;
+    }
+    .dropdown-menu li {
+      border-bottom: none;
+    }
+    .dropdown-menu li a {
+      padding: 10px 4px;
+      font-size: 13px;
+    }
     .nav-toggle { display: flex; }
 
     /* WhatsApp button visible on mobile */
