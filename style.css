@@ -821,13 +821,16 @@
       color: #084387;
     }
     
-    /* Make dropdown visible statically on mobile */
+    /* Make dropdown togglable on mobile */
     .dropdown-menu {
-      display: block !important;
+      display: none !important;
       position: static;
       box-shadow: none;
       padding: 0 0 10px 20px;
       background: transparent;
+    }
+    .dropdown-menu.show-dropdown {
+      display: block !important;
     }
     .dropdown-menu li {
       border-bottom: none;

@@ -48,7 +48,13 @@ navToggle.addEventListener('click', () => {
 });
 // Close menu on link click
 navLinks.querySelectorAll('a').forEach(a => {
-  a.addEventListener('click', () => {
+  a.addEventListener('click', (e) => {
+    // If clicking a link that has a dropdown menu on mobile, toggle it instead of closing nav
+    if (window.innerWidth <= 768 && a.nextElementSibling && a.nextElementSibling.classList.contains('dropdown-menu')) {
+      e.preventDefault();
+      a.nextElementSibling.classList.toggle('show-dropdown');
+      return; // Do not close the hamburger menu
+    }
     navToggle.classList.remove('open');
     navLinks.classList.remove('open');
   });
